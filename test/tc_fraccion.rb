@@ -1,11 +1,18 @@
 require 'lib/fraccion'
 require 'test/unit'
 
-class TestPoint < Test::Unit::TestCase
+class TestFraccion < Test::Unit::TestCase
   
   def setup
-    @origen = Fraccion.new(0,0)
-    @unidad = Fraccion.new(1,1)
+    @origen = Fraccion.new(5,4)
+    @unidad = Fraccion.new(2,5)
+  end
+  
+  def test_simple
+    assert_equal("(5,4)", @origen.to_s)
+    #assert_equal("(5,5)", (@unidad*5).to_s)
+    #assert_equal("(-1,-1)", (-@unidad).to_s)
+    #assert_equal("(1,1)", (@origen + @unidad).to_s)
   end
 
 end
