@@ -13,5 +13,9 @@ class Fraccion
     Fraccion.new(@num * value, @dem * value)
   end
   
+  def -@
+    Fraccion.new(@num * -1, @dem * -1)
+  end
+  
 end
     
