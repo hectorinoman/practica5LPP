@@ -13,6 +13,7 @@ class TestFraccion < Test::Unit::TestCase
     assert_equal("(10,25)", (@unidad*5).to_s)
     assert_equal("(-2,-5)", (-@unidad).to_s)
     assert_equal("(7,9)", (@origen + @unidad).to_s)
+    assert_equal("(3,-1)", (@origen - @unidad).to_s)
   end
 
 end
