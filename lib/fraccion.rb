@@ -9,7 +9,7 @@ class Fraccion
     "(#{@num},#{@dem})"
   end
   
-  def *(value)
+  def * (value)
     Fraccion.new(@num * value, @dem * value)
   end
   
@@ -22,12 +22,17 @@ class Fraccion
   end
   
   def - (other)
-    Fraccion.new(@num - other. num, @dem - other.dem)
+    Fraccion.new(@num - other.num, @dem - other.dem)
   end
   
-  def * (other)
-    Fraccion.new(@num * other. num, @dem * other.dem)
+  def * (other) #multipliacion de fracciones
+    Fraccion.new(@num * other.num, @dem * other.dem)
   end
+  
+  def * (other) #division de fracciones
+    Fraccion.new(@num * other.dem, @dem * other.num)
+  end
+  
   
   
   
