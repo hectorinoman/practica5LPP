@@ -25,4 +25,10 @@ class Fraccion
     Fraccion.new(@num - other. num, @dem - other.dem)
   end
   
+  def * (other)
+    Fraccion.new(@num * other. num, @dem * other.dem)
+  end
+  
+  
+  
 end
