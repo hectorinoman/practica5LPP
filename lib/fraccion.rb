@@ -9,6 +9,15 @@ class Fraccion
     "(#{@num},#{@dem})"
   end
   
+  def mcm(num,dem)
+    Fraccion.new(@num * other.dem, @dem * other.dem)
+    
+  end  
+  
+  
+  
+  
+  
   def * (value)
     Fraccion.new(@num * value, @dem * value)
   end
@@ -18,7 +27,7 @@ class Fraccion
   end
   
   def + (other)
-    Fraccion.new(@num + other.num, @dem + other.dem)
+    Fraccion.new(@num + other.num, @dem)
   end
   
   def - (other)

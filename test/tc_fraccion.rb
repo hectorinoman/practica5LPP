@@ -9,13 +9,17 @@ class TestFraccion < Test::Unit::TestCase
     
     @prueba1 = Fraccion.new(10,20)
     @prueba2 = Fraccion.new(30,40)
+    
+    @test1 = Fraccion.new(5,4)
+    @test2 = Fraccion.new(13,4)
+    
   end
   
   def test_simple
     assert_equal("(5,4)", @origen.to_s)
     #assert_equal("(10,25)", (@unidad*5).to_s) #multiplicacion por constante
     assert_equal("(-2,-5)", (-@unidad).to_s)
-    assert_equal("(7,9)", (@origen + @unidad).to_s)  
+    assert_equal("(18,4)", (@test1 + @test2).to_s)  
     assert_equal("(3,-1)", (@origen - @unidad).to_s)
     assert_equal("(10,20)", (@origen * @unidad).to_s)  ##multiplicacion de fracciones
     assert_equal("(400,600)", (@prueba1 ** @prueba2).to_s)  ##division de fracciones
