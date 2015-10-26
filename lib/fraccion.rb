@@ -29,7 +29,7 @@ class Fraccion
     Fraccion.new(@num * other.num, @dem * other.dem)
   end
   
-  def * (other) #division de fracciones
+  def ** (other) #division de fracciones
     Fraccion.new(@num * other.dem, @dem * other.num)
   end
   

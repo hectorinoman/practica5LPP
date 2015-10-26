@@ -17,8 +17,8 @@ class TestFraccion < Test::Unit::TestCase
     assert_equal("(-2,-5)", (-@unidad).to_s)
     assert_equal("(7,9)", (@origen + @unidad).to_s)  
     assert_equal("(3,-1)", (@origen - @unidad).to_s)
-    #assert_equal("(10,20)", (@origen * @unidad).to_s)  ##multiplicacion de fracciones
-    assert_equal("(400,600)", (@prueba1 * @prueba2).to_s)  ##division de fracciones
+    assert_equal("(10,20)", (@origen * @unidad).to_s)  ##multiplicacion de fracciones
+    assert_equal("(400,600)", (@prueba1 ** @prueba2).to_s)  ##division de fracciones
   end
 
 end
