@@ -20,14 +20,12 @@ class TestFraccion < Test::Unit::TestCase
     #assert_equal("(10,25)", (@unidad*5).to_s) #multiplicacion por constante
     assert_equal("(33,20)", (@origen + @unidad).to_s)  
     assert_equal("(-2,-5)", (-@unidad).to_s)
-    assert_equal("(3,-1)", (@origen - @unidad).to_s)
+    assert_equal("(17,20)", (@origen - @unidad).to_s)
     assert_equal("(10,20)", (@origen * @unidad).to_s)  ##multiplicacion de fracciones
     assert_equal("(400,600)", (@prueba1 ** @prueba2).to_s)  ##division de fracciones
   end
   
-  def suma_resta_mcm
-    
-  end
+
     
 
 end

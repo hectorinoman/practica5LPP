@@ -17,6 +17,14 @@ class Fraccion
   end
   
   
+  def - (other)
+    mcm = @dem.lcm(other.dem)
+    num1 = (mcm * @num) / @dem
+    num2 = (mcm * other.num) / other.dem
+    Fraccion.new(num1-num2, mcm)
+  end
+  
+  
   
   
   
@@ -28,11 +36,6 @@ class Fraccion
     Fraccion.new(@num * -1, @dem * -1)
   end
   
-
-  
-  def - (other)
-    Fraccion.new(@num - other.num, @dem - other.dem)
-  end
   
   def * (other) #multipliacion de fracciones
     Fraccion.new(@num * other.num, @dem * other.dem)
