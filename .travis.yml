@@ -4,4 +4,4 @@ script: rake
 
 branches:
   only:
-    - gh-pages
+    - travis
